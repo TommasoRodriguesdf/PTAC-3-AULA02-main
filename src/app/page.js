@@ -1,9 +1,3 @@
-
-export default async function Home() {
-
-  return (
-    <main>
-      <h1>Home</h1>
-    </main>
-  )
+export default function Registro(){
+  return( <h1>Página de Registro!</h1>);
 }

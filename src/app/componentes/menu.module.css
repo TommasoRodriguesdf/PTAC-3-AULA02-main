@@ -1,0 +1,11 @@
+.cabecalho{
+    display: flex;
+    height: 100px;
+    background-color: rgba(45, 193, 19, 0.594);
+
+}
+.cabecalho h1{
+    background-image: url("");
+    background-color: rgb(0, 0, 0, 0.7);
+    margin-top: 0px;
+}
