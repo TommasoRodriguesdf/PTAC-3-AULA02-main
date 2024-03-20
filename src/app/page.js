@@ -1,3 +1,22 @@
-export default function Registro(){
-  return( <h1>Página de Registro!</h1>);
+const url = "https://back-end-ifms-ptac-3-tom.vercel.app/campi";
+
+export default async function Home() {
+
+  const resposta = await fetch(url,{
+    next:{
+      revalidate:1
+    }
+  });
+  const campi = await resposta.json();
+ 
+  return (
+    <main>
+      <h1>Home</h1>
+      {campi.map((campus) =>
+        <div>
+             <p>{campus.nome_campus}</p>
+        </div>
+      )}
+    </main>
+  )
 }
